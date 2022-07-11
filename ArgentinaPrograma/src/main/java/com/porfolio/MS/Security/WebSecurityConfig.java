@@ -49,7 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/user").authenticated() //pagina resguardada
                     //.antMatchers(HttpMethod.GET, "/**").permitAll() //permite acceder al porfolio personal
                     //.antMatchers("/api/auth/**").permitAll()//permite acceder a la autentificacion
-                    .antMatchers("/registro","/admin","/**","/image/**").permitAll()
+                    .antMatchers("/registro","/admin","/**","/image/**","/api/**").permitAll()
                     .anyRequest().authenticated()//
                     //.anyRequest().permitAll()
                 .and()
