@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @RestController
+@RequestMapping("/api/")
 public class FileController {
 
     private static final Logger logger = LoggerFactory.getLogger(FileController.class);

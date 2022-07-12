@@ -14,6 +14,7 @@ import java.util.List;
  */
 
 @RestController
+@RequestMapping("/api/")
 @CrossOrigin(origins = "http://localhost:4200") //ANGULAR
 public class UserController {
 

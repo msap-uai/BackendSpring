@@ -45,11 +45,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //autorizacion
                 .authorizeRequests()
 
-                    .antMatchers("/admin").hasRole("ADMIN")
-                    .antMatchers("/user").authenticated() //pagina resguardada
+                    .antMatchers("/api/admin").hasRole("ADMIN")
+                    .antMatchers("/api/user").authenticated() //pagina resguardada
                     //.antMatchers(HttpMethod.GET, "/**").permitAll() //permite acceder al porfolio personal
                     //.antMatchers("/api/auth/**").permitAll()//permite acceder a la autentificacion
-                    .antMatchers("/registro","/admin","/**","/image/**","/api/**").permitAll()
+                    .antMatchers("/registro","/**","/image/**").permitAll()
                     .anyRequest().authenticated()//
                     //.anyRequest().permitAll()
                 .and()
