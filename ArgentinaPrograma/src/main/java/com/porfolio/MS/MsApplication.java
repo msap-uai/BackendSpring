@@ -42,7 +42,7 @@ public class MsApplication {
 		return (args) -> {
 			// Create a User instance
 			if(!userRepository.existsByUsername("manuelsaponaro")){
-				User user = new User("manuelsaponaro@gmail.com", passwordEncoder.encode("123"), "Manuel",
+				User user = new User("xxxxxxxxxxxxxx", passwordEncoder.encode("xxxxxxxxxxxx"), "Manuel",
 						"Saponaro");
 
 
